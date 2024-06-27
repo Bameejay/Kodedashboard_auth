@@ -1,9 +1,15 @@
 import dashboard2 from '../assets/images/dashboard_img/dashboard_icon2.png'
 import dashboardmain from '../assets/images/dashboard_img/dashboardmain_icon.png'
-// import dashboard2 from '../assets/images/dashboard_img/dashboard_icon2.png'
-// import dashboard2 from '../assets/images/dashboard_img/dashboard_icon2.png'
-// import dashboard2 from '../assets/images/dashboard_img/dashboard_icon2.png'
-// import dashboard2 from '../assets/images/dashboard_img/dashboard_icon2.png'
+import dashboardProduct from '../assets/images/dashboard_img/product_icon.png'
+import dashboardCustomers from '../assets/images/dashboard_img/customer_icon.png'
+import dashboardIncome from '../assets/images/dashboard_img/income_icon.png'
+import dashboardPromote from '../assets/images/dashboard_img/promote_icon.png'
+import dashboardHelp from '../assets/images/dashboard_img/help_icon.png'
+import projectManager from '../assets/images/dashboard_img/project_manager.png'
+import arrowDown from '../assets/images/dashboard_img/arrow_down.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -14,7 +20,7 @@ const Dashboard = () => {
     <div className="container flex min-h-screen">
 
       {/* left Container */}
-      <aside className="w-64 bg-white shadow-md p-4">
+      <aside className="min-w-64 bg-white shadow-md p-4">
         <div className='flex items-center gap-2 mb-20 mt-5'>
           <img src={dashboardmain} alt="dashboard_icon" />         
           <p className="text-lg font-semibold">Dashboard<span className="text-xs text-gray-500"> v.01</span></p>
@@ -25,38 +31,57 @@ const Dashboard = () => {
             <a href="#" className="text-gray-400 hover:text-black text-xs font-bold">Dashboard</a>
           </div>
           <div className='flex gap-2 items-center'>
-            <img src={dashboard2} alt="dashboad_button_icon" />
+            <img src={dashboardProduct} alt="dashboad_button_icon" />
             <a href="#" className="text-gray-400 hover:text-black text-xs font-bold">Products</a>
           </div>
-          <div className='flex gap-2 items-center'>
-            <img src={dashboard2} alt="dashboad_button_icon" />
-            <a href="#" className="text-gray-400 hover:text-black text-xs font-bold">Customers</a>
+          <div className='flex gap-2 items-center bg-[#5932EA] p-2 rounded-xl'>
+            <img src={dashboardCustomers} alt="dashboad_button_icon" className='img-icon-customers'/>
+            <a href="#" className="text-white hover:text-black text-xs font-bold">Customers</a>
           </div>
           <div className='flex gap-2 items-center'>
-            <img src={dashboard2} alt="dashboad_button_icon" />
+            <img src={dashboardIncome} alt="dashboad_button_icon" />
             <a href="#" className="text-gray-400 hover:text-black text-xs font-bold">Income</a>
           </div>
           <div className='flex gap-2 items-center'>
-            <img src={dashboard2} alt="dashboad_button_icon" />
+            <img src={dashboardPromote} alt="dashboad_button_icon" />
             <a href="#" className="text-gray-400 hover:text-black text-xs font-bold">Promote</a>
           </div>
           <div className='flex gap-2 items-center'>
-            <img src={dashboard2} alt="dashboad_button_icon" />
+            <img src={dashboardHelp} alt="dashboad_button_icon" />
             <a href="#" className="text-gray-400 hover:text-black text-xs font-bold">Help</a>
           </div>
         </nav>
-        <div className="mt-auto">
-          <button className="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700">
-            Upgrade to PRO
+        <div className="mt-48 px-4 py-8 bg-gradient-to-l from-[#4623E9] via-[#EAABF0] to-[#EAABF0] rounded-xl">
+          <p className='text-[10px] text-white text-center'>Upgrade to PRO to get <br /> access all features</p>
+          <button className="w-full bg-white text-[#4623E9] font-bold mb-0 mt-4 text-xs py-2 my-2 rounded-xl hover:text-white hover:bg-purple-700">
+            Get Pro now
           </button>
         </div>
+        <div className='flex justify-between align-middle items-center mt-4'>
+            <div className='flex items-center gap-3'>
+              <img src={projectManager} alt="project_managerIcon" />
+              <p className='text-sm font-bold'>Evano <br /><span className='font-normal'>Project Manager</span></p>
+            </div>
+            <div className='cursor-pointer'>
+              <img src={arrowDown} alt="arrow_down" />
+            </div>
+        </div>
       </aside>
-      
+
+
+      {/* Right Container */}
       <main className="flex-1 p-6 bg-gray-100">
+
+        {/* Header */}
         <header className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-semibold">Hello Evano 👋</h1>
-          <input type="text" placeholder="Search" className="p-2 border rounded-lg" />
+          <div className='flex items-center p-2 border rounded-lg bg-white'>
+            <FontAwesomeIcon icon={faSearch} className="text-gray-500 mr-2" />
+           <input type="text" placeholder="Search" className=" border border-none focus:outline-none" />
+          </div>
         </header>
+
+
         <section className="grid grid-cols-3 gap-6 mb-6">
           <div className="bg-white p-4 rounded-lg shadow-md">
             <h2 className="text-lg font-semibold">Total Customers</h2>
