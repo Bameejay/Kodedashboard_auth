@@ -1,15 +1,49 @@
+import dashboard2 from '../assets/images/dashboard_img/dashboard_icon2.png'
+import dashboardmain from '../assets/images/dashboard_img/dashboardmain_icon.png'
+// import dashboard2 from '../assets/images/dashboard_img/dashboard_icon2.png'
+// import dashboard2 from '../assets/images/dashboard_img/dashboard_icon2.png'
+// import dashboard2 from '../assets/images/dashboard_img/dashboard_icon2.png'
+// import dashboard2 from '../assets/images/dashboard_img/dashboard_icon2.png'
+
+
+
+
+
 const Dashboard = () => {
   return (
-    <div className="flex min-h-screen">
+    <div className="container flex min-h-screen">
+
+      {/* left Container */}
       <aside className="w-64 bg-white shadow-md p-4">
-        <div className="text-lg font-semibold mb-4">Dashboard</div>
+        <div className='flex items-center gap-2 mb-20 mt-5'>
+          <img src={dashboardmain} alt="dashboard_icon" />         
+          <p className="text-lg font-semibold">Dashboard<span className="text-xs text-gray-500"> v.01</span></p>
+        </div>
         <nav className="flex flex-col space-y-4">
-          <a href="#" className="text-gray-600 hover:text-black">Dashboard</a>
-          <a href="#" className="text-gray-600 hover:text-black">Product</a>
-          <a href="#" className="text-gray-600 hover:text-black">Customers</a>
-          <a href="#" className="text-gray-600 hover:text-black">Income</a>
-          <a href="#" className="text-gray-600 hover:text-black">Promote</a>
-          <a href="#" className="text-gray-600 hover:text-black">Help</a>
+          <div className='flex gap-2 items-center'>
+            <img src={dashboard2} alt="dashboad_button_icon" className='hover:text-black' />
+            <a href="#" className="text-gray-400 hover:text-black text-xs font-bold">Dashboard</a>
+          </div>
+          <div className='flex gap-2 items-center'>
+            <img src={dashboard2} alt="dashboad_button_icon" />
+            <a href="#" className="text-gray-400 hover:text-black text-xs font-bold">Products</a>
+          </div>
+          <div className='flex gap-2 items-center'>
+            <img src={dashboard2} alt="dashboad_button_icon" />
+            <a href="#" className="text-gray-400 hover:text-black text-xs font-bold">Customers</a>
+          </div>
+          <div className='flex gap-2 items-center'>
+            <img src={dashboard2} alt="dashboad_button_icon" />
+            <a href="#" className="text-gray-400 hover:text-black text-xs font-bold">Income</a>
+          </div>
+          <div className='flex gap-2 items-center'>
+            <img src={dashboard2} alt="dashboad_button_icon" />
+            <a href="#" className="text-gray-400 hover:text-black text-xs font-bold">Promote</a>
+          </div>
+          <div className='flex gap-2 items-center'>
+            <img src={dashboard2} alt="dashboad_button_icon" />
+            <a href="#" className="text-gray-400 hover:text-black text-xs font-bold">Help</a>
+          </div>
         </nav>
         <div className="mt-auto">
           <button className="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700">
@@ -17,6 +51,7 @@ const Dashboard = () => {
           </button>
         </div>
       </aside>
+      
       <main className="flex-1 p-6 bg-gray-100">
         <header className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-semibold">Hello Evano 👋</h1>

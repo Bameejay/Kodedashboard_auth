@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import searchIcon from '../assets/images/search_icon.png'
 import { faLocationDot, faUserGroup,faClock,faDollarSign } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom'
 
 const RegistrationFormThree = () => {
   const navigate = useNavigate();
@@ -53,10 +54,11 @@ const RegistrationFormThree = () => {
             <button type="button" className="px-4 py-2 text-xs font-bold border rounded-xl text-purple-500 border-purple-500 hover:bg-purple-50">
             <FontAwesomeIcon icon={faLocationDot} />  Use current location
             </button>
-            <button type="button" className="px-4 py-2 text-xs font-bold border rounded-xl text-purple-500 border-purple-500 hover:bg-purple-50">
-              Add manually
-            </button>
-          </div>
+            <Link to ='/register4'>
+              <button type="button" className="px-4 py-2 text-xs font-bold border rounded-xl text-purple-500 border-purple-500 hover:bg-purple-50">
+                Add manually
+              </button>
+            </Link>          </div>
           <div className="mb-6">
             <p className="text-black text-sm font-bold mb-5">Sharing your address shows:</p>
             <ul className="list-inside text-gray-500 flex flex-col gap-2">

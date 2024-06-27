@@ -92,7 +92,7 @@ const RegistrationFormTwo = () => {
               
             </div>
             {formik.touched.gender && formik.errors.gender ? (
-              <p className="text-red-500 text-sm">{formik.errors.gender}</p>
+              <p className="text-red-500 text-sm ml-2">{formik.errors.gender}</p>
             ) : null}
           </div>
           
@@ -152,17 +152,17 @@ const RegistrationFormTwo = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.phoneNumber}
-            className={`peer w-full px-4 py-2 border rounded-lg  ${formik.errors.phoneNumber && formik.touched.phoneNumber ? 'border-red-500' : 'focus:ring-purple-500'}`}
+            className={`peer w-full px-4 py-2 border rounded-lg ${formik.errors.phoneNumber && formik.touched.phoneNumber ? 'border-red-500' : 'focus:ring-purple-500'}`}
             placeholder=" "
           />
           <label
             htmlFor="phoneNumber"
-            className="absolute left-3 top-2 transition-all peer-placeholder-shown:text-gray-500 peer-focus:top-10 text-[10px]"
+            className="absolute left-4 top-[-4] transition-all peer-placeholder-shown:text-gray-500 text-[10px]"
           >
             Enter Phone Number
           </label>
           {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
-            <p className="text-red-500 text-sm">{formik.errors.phoneNumber}</p>
+            <p className="text-red-500 text-xs">{formik.errors.phoneNumber}</p>
           ) : null}
         </div>
       </div>
