@@ -89,7 +89,7 @@ const Dashboard = () => {
 
 
       {/* Right Container */}
-      <main className="flex-1 p-6 bg-gray-100">
+      <main className="flex-1 p-6 bg-gray-100 mt-auto">
 
         {/* Header */}
         <header className="flex justify-between items-center mb-6">
