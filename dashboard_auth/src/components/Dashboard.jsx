@@ -26,7 +26,7 @@ import dashActiveNow from '../assets/images/dashboard_img/dashboard_activenow.pn
 
 const Dashboard = () => {
   return (
-    <div className="container flex min-h-screen">
+    <div className="container flex min-h-full">
 
       {/* left Container */}
       <aside className="min-w-64 bg-white shadow-md p-4 flex flex-col">
