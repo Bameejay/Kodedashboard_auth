@@ -34,7 +34,7 @@ const Dashboard = () => {
 
       {/* left Container */}
       <aside className="min-w-64 bg-white shadow-md p-4 flex flex-col">
-        <div>
+        <div className='mb-64'>
         <div className='flex items-center gap-2 mb-20 mt-5'>
           <img src={dashboardmain} alt="dashboard_icon" />         
           <p className="text-lg font-semibold">Dashboard<span className="text-xs text-gray-500"> v.01</span></p>
