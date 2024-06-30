@@ -11,6 +11,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import totalCustomer from '../assets/images/dashboard_img/totalcustomer_icon.png'
 import member from '../assets/images/dashboard_img/members_icon.png'
 import activeNow from '../assets/images/dashboard_img/activenow_icon.png'
@@ -27,7 +29,8 @@ const Dashboard = () => {
     <div className="container flex min-h-screen">
 
       {/* left Container */}
-      <aside className="min-w-64 bg-white shadow-md p-4">
+      <aside className="min-w-64 bg-white shadow-md p-4 flex flex-col">
+        <div>
         <div className='flex items-center gap-2 mb-20 mt-5'>
           <img src={dashboardmain} alt="dashboard_icon" />         
           <p className="text-lg font-semibold">Dashboard<span className="text-xs text-gray-500"> v.01</span></p>
@@ -58,8 +61,10 @@ const Dashboard = () => {
             <a href="#" className="text-gray-400 hover:text-black text-xs font-bold">Help</a>
           </div>
         </nav>
-        <div>
-        <div className="mt-48 px-4 py-8 bg-gradient-to-l from-[#4623E9] via-[#EAABF0] to-[#EAABF0] rounded-xl">
+        </div>
+        
+        <div className='mt-64'>
+        <div className="px-4 py-8 bg-gradient-to-l from-[#4623E9] via-[#EAABF0] to-[#EAABF0] rounded-xl">
           <p className='text-[10px] text-white text-center'>Upgrade to PRO to get <br /> access all features</p>
           <button className="w-full bg-white text-[#4623E9] font-bold mb-0 mt-4 text-xs py-2 my-2 rounded-xl hover:text-white hover:bg-purple-700">
             Get Pro now
@@ -138,11 +143,11 @@ const Dashboard = () => {
           <div className="mb-4 flex items-center">
           <p className='text-green-500 font-bold text-sm'>Active Members</p>
             <div className='ml-auto flex gap-4'>
-            <div className='flex items-center p-2 border rounded-lg bg-[#B5B7C0]'>
+            <div className='flex items-center p-2 border rounded-lg bg-gray-200'>
             <FontAwesomeIcon icon={faSearch} className="text-gray-500 mr-2" />
-           <input type="text" placeholder="Search" className=" border border-none focus:outline-none bg-[#B5B7C0]" />
+           <input type="text" placeholder="Search" className=" border border-none focus:outline-none bg-gray-200" />
           </div>
-            <select className="p-2 border rounded-lg bg-[#B5B7C0] text-sm font-bold select-custom">
+            <select className="p-2 border rounded-lg bg-gray-200 text-sm font-bold select-custom">
               {/* <option>Sort by: Newest</option> */}
               <option>
             <span className="sort-by">Sort by:</span> <span className="newest">Newest</span>
@@ -168,7 +173,8 @@ const Dashboard = () => {
                 <td className="p-2">(225) 555-0118</td>
                 <td className="p-2">jane@microsoft.com</td>
                 <td className="p-2">United States</td>
-                <td className="p-2 text-green-500">Active</td>
+                {/* <td className=" text-center text-green-700 bg-[#16C098] opacity-50 font-bold ring-2 ring-green-700 ring-inset">Active</td> */}
+                <button className='px-6 py-1 bg-[#16C098]  text-xs font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button>
               </tr>
               <tr>
                 <td className="p-2">Floyd Miles</td>
@@ -176,7 +182,7 @@ const Dashboard = () => {
                 <td className="p-2">(205) 555-0100</td>
                 <td className="p-2">floyd@yahoo.com</td>
                 <td className="p-2">Kiribati</td>
-                <td className="p-2 text-red-500">Inactive</td>
+                <button className='px-6 py-1 bg-red-400 text-xs font-bold text-red-700 ring-2 ring-red-700 hover:bg-red-200 rounded-sm'>Active</button>
               </tr>
               <tr>
                 <td className="p-2">Ronald Richards</td>
@@ -184,7 +190,7 @@ const Dashboard = () => {
                 <td className="p-2">(302) 555-0107</td>
                 <td className="p-2">ronald@adobe.com</td>
                 <td className="p-2">Israel</td>
-                <td className="p-2 text-red-500">Inactive</td>
+                <button className='px-6 py-1 bg-red-400 text-xs font-bold text-red-700 ring-2 ring-red-700 hover:bg-red-200 rounded-sm'>Active</button>
               </tr>
               <tr>
                 <td className="p-2">Marvin McKinney</td>
@@ -192,7 +198,7 @@ const Dashboard = () => {
                 <td className="p-2">(252) 555-0126</td>
                 <td className="p-2">marvin@tesla.com</td>
                 <td className="p-2">Iran</td>
-                <td className="p-2 text-green-500">Active</td>
+                <button className='px-6 py-1 bg-[#16C098]  text-xs font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button>
               </tr>
               <tr>
                 <td className="p-2">Jerome Bell</td>
@@ -200,7 +206,7 @@ const Dashboard = () => {
                 <td className="p-2">(629) 555-0129</td>
                 <td className="p-2">jerome@google.com</td>
                 <td className="p-2">Réunion</td>
-                <td className="p-2 text-green-500">Active</td>
+                <button className='px-6 py-1 bg-[#16C098]  text-xs font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button>
               </tr>
               <tr>
                 <td className="p-2">Kathryn Murphy</td>
@@ -208,7 +214,7 @@ const Dashboard = () => {
                 <td className="p-2">(406) 555-0120</td>
                 <td className="p-2">kathryn@microsoft.com</td>
                 <td className="p-2">Curaçao</td>
-                <td className="p-2 text-green-500">Active</td>
+                <button className='px-6 py-1 bg-[#16C098]  text-xs font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button>
               </tr>
               <tr>
                 <td className="p-2">Jacob Jones</td>
@@ -216,7 +222,7 @@ const Dashboard = () => {
                 <td className="p-2">(208) 555-0112</td>
                 <td className="p-2">jacob@yahoo.com</td>
                 <td className="p-2">Brazil</td>
-                <td className="p-2 text-green-500">Active</td>
+                <button className='px-6 py-1 bg-[#16C098]  text-xs font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button>
               </tr>
               <tr>
                 <td className="p-2">Kristin Watson</td>
@@ -224,19 +230,21 @@ const Dashboard = () => {
                 <td className="p-2">(704) 555-0127</td>
                 <td className="p-2">kristin@facebook.com</td>
                 <td className="p-2">Åland Islands</td>
-                <td className="p-2 text-red-500">Inactive</td>
+                <button className='px-6 py-1 bg-red-400 text-xs font-bold text-red-700 ring-2 ring-red-700 hover:bg-red-200 rounded-sm'>Active</button>
               </tr>
             </tbody>
           </table>
           <div className="mt-4 flex justify-between items-center">
             <span className="text-gray-500 text-xs font-bold">Showing data 1 to 8 of 256K entries</span>
             <div className="flex space-x-2">
+            <button className='px-4 py-2 border rounded-lg'><FontAwesomeIcon icon={faArrowLeft} /></button>
               <button className="px-4 py-2 border rounded-lg bg-purple-700 text-white">1</button>
               <button className="px-4 py-2 border rounded-lg">2</button>
               <button className="px-4 py-2 border rounded-lg">3</button>
               <button className="px-4 py-2 border rounded-lg">4</button>
               <span className="px-4 py-2">...</span>
               <button className="px-4 py-2 border rounded-lg">40</button>
+              <button className='px-4 py-2 border rounded-lg'><FontAwesomeIcon icon={faArrowRight} /></button>
             </div>
           </div>
         </section>
