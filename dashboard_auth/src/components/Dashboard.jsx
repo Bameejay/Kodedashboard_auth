@@ -26,7 +26,7 @@ import dashActiveNow from '../assets/images/dashboard_img/dashboard_activenow.pn
 
 const Dashboard = () => {
   return (
-    <div className="container flex h-full">
+    <div className="container flex max-h-screen">
 
       {/* left Container */}
       <aside className="min-w-64 bg-white shadow-md p-4 flex flex-col">
@@ -174,7 +174,7 @@ const Dashboard = () => {
                 <td className="p-2">jane@microsoft.com</td>
                 <td className="p-2">United States</td>
                 {/* <td className=" text-center text-green-700 bg-[#16C098] opacity-50 font-bold ring-2 ring-green-700 ring-inset">Active</td> */}
-                <button className='px-6 py-1 bg-[#16C098]  text-xs font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button>
+                <button className='px-6 py-1 bg-[#16C098]  text-xs font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm md:items-center'>Active</button>
               </tr>
               <tr>
                 <td className="p-2">Floyd Miles</td>
