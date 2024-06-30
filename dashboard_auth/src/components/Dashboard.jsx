@@ -28,6 +28,10 @@ const Dashboard = () => {
   return (
     <div className="container flex max-h-screen">
 
+
+
+
+
       {/* left Container */}
       <aside className="min-w-64 bg-white shadow-md p-4 flex flex-col">
         <div>
@@ -63,7 +67,7 @@ const Dashboard = () => {
         </nav>
         </div>
         
-        <div className='mt-64'>
+        <div className='mt-auto'>
         <div className="px-4 py-8 bg-gradient-to-l from-[#4623E9] via-[#EAABF0] to-[#EAABF0] rounded-xl">
           <p className='text-[10px] text-white text-center'>Upgrade to PRO to get <br /> access all features</p>
           <button className="w-full bg-white text-[#4623E9] font-bold mb-0 mt-4 text-xs py-2 my-2 rounded-xl hover:text-white hover:bg-purple-700">
@@ -174,7 +178,7 @@ const Dashboard = () => {
                 <td className="p-2">jane@microsoft.com</td>
                 <td className="p-2">United States</td>
                 {/* <td className=" text-center text-green-700 bg-[#16C098] opacity-50 font-bold ring-2 ring-green-700 ring-inset">Active</td> */}
-                <button className='px-6 py-1 bg-[#16C098]  text-xs font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm md:items-center'>Active</button>
+                <button className='px-6 py-1 bg-[#16C098]  text-xs font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button>
               </tr>
               <tr>
                 <td className="p-2">Floyd Miles</td>
