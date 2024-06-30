@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.select-custom option span.sort-by {
+    color: red;
+}
 
-/* .img-icon-customers {
+.select-custom option span.newest {
     color: yellow;
-    background-color: red;
-} */
+}

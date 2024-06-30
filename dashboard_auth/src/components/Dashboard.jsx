@@ -9,6 +9,13 @@ import projectManager from '../assets/images/dashboard_img/project_manager.png'
 import arrowDown from '../assets/images/dashboard_img/arrow_down.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import totalCustomer from '../assets/images/dashboard_img/totalcustomer_icon.png'
+import member from '../assets/images/dashboard_img/members_icon.png'
+import activeNow from '../assets/images/dashboard_img/activenow_icon.png'
+import dashActiveNow from '../assets/images/dashboard_img/dashboard_activenow.png'
+
 
 
 
@@ -51,6 +58,7 @@ const Dashboard = () => {
             <a href="#" className="text-gray-400 hover:text-black text-xs font-bold">Help</a>
           </div>
         </nav>
+        <div>
         <div className="mt-48 px-4 py-8 bg-gradient-to-l from-[#4623E9] via-[#EAABF0] to-[#EAABF0] rounded-xl">
           <p className='text-[10px] text-white text-center'>Upgrade to PRO to get <br /> access all features</p>
           <button className="w-full bg-white text-[#4623E9] font-bold mb-0 mt-4 text-xs py-2 my-2 rounded-xl hover:text-white hover:bg-purple-700">
@@ -66,6 +74,8 @@ const Dashboard = () => {
               <img src={arrowDown} alt="arrow_down" />
             </div>
         </div>
+        </div>
+        
       </aside>
 
 
@@ -82,29 +92,63 @@ const Dashboard = () => {
         </header>
 
 
-        <section className="grid grid-cols-3 gap-6 mb-6">
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <h2 className="text-lg font-semibold">Total Customers</h2>
-            <p className="text-2xl">5,423</p>
-            <p className="text-sm text-green-500">16% this month</p>
+        {/* <section className="grid grid-cols-3 mb-6"> */}
+          {/* <div className='flex justify-between bg-white mb-6 p-6 rounded-3xl'> */}
+          <div className='grid grid-cols-3 divide-x bg-white mb-6 p-8 rounded-3xl'>
+              {/* First Column */}
+          <div className="flex items-center gap-4 p-4 ">
+            <div>
+              <img src={totalCustomer} alt="memebers_icon" className='w-20 h-20' />
+            </div>
+            <div>
+              <h2 className="text-lg font-semibold text-gray-400">Total Customers</h2>
+              <p className="text-3xl font-bold">5,423</p>
+              <p className="text-sm"><span className='text-green-500 mr-2 font-bold'><FontAwesomeIcon icon={faArrowUp} className='mr-2'/>16%</span>this month</p>
+            </div>
           </div>
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <h2 className="text-lg font-semibold">Members</h2>
-            <p className="text-2xl">1,893</p>
-            <p className="text-sm text-red-500">1% this month</p>
+          {/* Second Column */}
+          <div className="flex items-center gap-4 p-4">
+            <div>
+              <img src={member} alt="memebers_icon" className='w-20 h-20' />
+            </div>
+            <div>
+              <span></span>
+              <h2 className="text-lg font-semibold text-gray-400">Memebers</h2>
+              <p className="text-3xl font-bold">1,893</p>
+              <p className="text-sm"><span className='text-red-700 mr-2 font-bold'><FontAwesomeIcon icon={faArrowDown} className='mr-2 ' />1%</span>this month</p>
+            </div>
           </div>
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <h2 className="text-lg font-semibold">Active Now</h2>
-            <p className="text-2xl">189</p>
+          {/* Third Column */}
+          <div className="flex items-center gap-4  p-4">
+            <div>
+              <img src={activeNow} alt="memebers_icon" className='w-20 h-20' />
+            </div>
+            <div>
+              <h2 className="text-lg font-semibold text-gray-400">Active Now</h2>
+              <p className="text-3xl font-bold">189</p>
+              <img src={dashActiveNow} alt="" />
+            </div>
           </div>
-        </section>
+          </div>
+        {/* </section> */}
+
+          {/* Customers Container */}
         <section className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-lg font-semibold mb-4">All Customers</h2>
-          <div className="mb-4 flex justify-between items-center">
-            <input type="text" placeholder="Search" className="p-2 border rounded-lg" />
-            <select className="p-2 border rounded-lg">
-              <option>Sort by: Newest</option>
+          <h2 className="text-lg mb-4 font-bold">All Customers</h2>
+          <div className="mb-4 flex items-center">
+          <p className='text-green-500 font-bold text-sm'>Active Members</p>
+            <div className='ml-auto flex gap-4'>
+            <div className='flex items-center p-2 border rounded-lg bg-[#B5B7C0]'>
+            <FontAwesomeIcon icon={faSearch} className="text-gray-500 mr-2" />
+           <input type="text" placeholder="Search" className=" border border-none focus:outline-none bg-[#B5B7C0]" />
+          </div>
+            <select className="p-2 border rounded-lg bg-[#B5B7C0] text-sm font-bold select-custom">
+              {/* <option>Sort by: Newest</option> */}
+              <option>
+            <span className="sort-by">Sort by:</span> <span className="newest">Newest</span>
+        </option>
             </select>
+            </div>
           </div>
           <table className="w-full table-auto">
             <thead>
@@ -185,9 +229,9 @@ const Dashboard = () => {
             </tbody>
           </table>
           <div className="mt-4 flex justify-between items-center">
-            <span className="text-gray-500">Showing data 1 to 8 of 256K entries</span>
+            <span className="text-gray-500 text-xs font-bold">Showing data 1 to 8 of 256K entries</span>
             <div className="flex space-x-2">
-              <button className="px-4 py-2 border rounded-lg">1</button>
+              <button className="px-4 py-2 border rounded-lg bg-purple-700 text-white">1</button>
               <button className="px-4 py-2 border rounded-lg">2</button>
               <button className="px-4 py-2 border rounded-lg">3</button>
               <button className="px-4 py-2 border rounded-lg">4</button>
