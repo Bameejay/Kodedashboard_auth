@@ -292,6 +292,7 @@ const Dashboard = () => {
           </nav>
         </div>
         
+        <div className='mt-auto'>
         <div className='mt-auto mb-4'>
           <div className="px-4 py-4 bg-gradient-to-l from-[#4623E9] via-[#EAABF0] to-[#EAABF0] rounded-xl">
             <p className='text-[10px] text-white text-center'>Upgrade to PRO to get <br /> access all features</p>
@@ -311,6 +312,7 @@ const Dashboard = () => {
               <img src={arrowDown} alt="arrow_down" />
             </div>
           </div>
+        </div>
         </div>
       </aside>
 
