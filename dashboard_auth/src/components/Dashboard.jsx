@@ -328,7 +328,7 @@ const Dashboard = () => {
           </div>
         </header>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 divide-x bg-white mb-6 p-8 rounded-3xl'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:divide-x bg-white mb-6 p-8 rounded-3xl sm:divide-x-0'>
           {/* First Column */}
           <div className="flex items-center gap-4 p-4 ">
             <div>
@@ -370,7 +370,7 @@ const Dashboard = () => {
           <h2 className="text-lg mb-4 font-bold">All Customers</h2>
           <div className="mb-4 flex flex-col sm:flex-row items-center">
             <p className='text-green-500 font-bold text-sm'>Active Members</p>
-            <div className='ml-auto flex flex-col sm:flex-row gap-4'>
+            <div className='lg:ml-auto flex flex-col sm:flex-row gap-4'>
               <div className='flex items-center p-2 border rounded-lg bg-gray-200'>
                 <FontAwesomeIcon icon={faSearch} className="text-gray-500 mr-2" />
                 <input type="text" placeholder="Search" className="border border-none focus:outline-none bg-gray-200" />
