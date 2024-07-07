@@ -399,7 +399,7 @@ const Dashboard = () => {
                   <td className="p-2 block md:table-cell">(225) 555-0118</td>
                   <td className="p-2 block md:table-cell">jane@microsoft.com</td>
                   <td className="p-2 block md:table-cell">United States</td>
-                  <td className="p-2 block md:table-cell"><button className='px-4 py-1 bg-[#16C098] text-xs font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button></td>
+                  <td className="p-2 block md:table-cell"><button className='px-5 py-1 bg-[#16C098] text-sm font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button></td>
                 </tr>
                 <tr className="border-b block md:table-row">
                   <td className="p-2 block md:table-cell">Floyd Miles</td>
@@ -407,7 +407,7 @@ const Dashboard = () => {
                   <td className="p-2 block md:table-cell">(205) 555-0100</td>
                   <td className="p-2 block md:table-cell">floyd@yahoo.com</td>
                   <td className="p-2 block md:table-cell">Kiribati</td>
-                  <td className="p-2 block md:table-cell"><button className='px-4 py-1 bg-red-400 text-xs font-bold text-red-700 ring-2 ring-red-700 hover:bg-red-200 rounded-sm'>Inactive</button></td>
+                  <td className="p-2 block md:table-cell"><button className='px-4 py-1 bg-red-400 text-sm font-bold text-red-700 ring-2 ring-red-700 hover:bg-red-200 rounded-sm'>Inactive</button></td>
                 </tr>
                 <tr className="border-b block md:table-row">
                   <td className="p-2 block md:table-cell">Ronald Richards</td>
@@ -415,7 +415,7 @@ const Dashboard = () => {
                   <td className="p-2 block md:table-cell">(302) 555-0107</td>
                   <td className="p-2 block md:table-cell">ronald@adobe.com</td>
                   <td className="p-2 block md:table-cell">Israel</td>
-                  <td className="p-2 block md:table-cell"><button className='px-4 py-1 bg-red-400 text-xs font-bold text-red-700 ring-2 ring-red-700 hover:bg-red-200 rounded-sm'>Inactive</button></td>
+                  <td className="p-2 block md:table-cell"><button className='px-4 py-1 bg-red-400 text-sm font-bold text-red-700 ring-2 ring-red-700 hover:bg-red-200 rounded-sm'>Inactive</button></td>
                 </tr>
                 <tr className="border-b block md:table-row">
                   <td className="p-2 block md:table-cell">Marvin McKinney</td>
@@ -423,7 +423,7 @@ const Dashboard = () => {
                   <td className="p-2 block md:table-cell">(252) 555-0126</td>
                   <td className="p-2 block md:table-cell">marvin@tesla.com</td>
                   <td className="p-2 block md:table-cell">Iran</td>
-                  <td className="p-2 block md:table-cell"><button className='px-4 py-1 bg-[#16C098] text-xs font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button></td>
+                  <td className="p-2 block md:table-cell"><button className='px-5 py-1 bg-[#16C098] text-sm font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button></td>
                 </tr>
                 <tr className="border-b block md:table-row">
                   <td className="p-2 block md:table-cell">Jerome Bell</td>
@@ -431,7 +431,7 @@ const Dashboard = () => {
                   <td className="p-2 block md:table-cell">(629) 555-0129</td>
                   <td className="p-2 block md:table-cell">jerome@google.com</td>
                   <td className="p-2 block md:table-cell">Réunion</td>
-                  <td className="p-2 block md:table-cell"><button className='px-4 py-1 bg-[#16C098] text-xs font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button></td>
+                  <td className="p-2 block md:table-cell"><button className='px-5 py-1 bg-[#16C098] text-sm font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button></td>
                 </tr>
                 <tr className="border-b block md:table-row">
                   <td className="p-2 block md:table-cell">Kathryn Murphy</td>
@@ -439,7 +439,7 @@ const Dashboard = () => {
                   <td className="p-2 block md:table-cell">(406) 555-0120</td>
                   <td className="p-2 block md:table-cell">kathryn@microsoft.com</td>
                   <td className="p-2 block md:table-cell">Curaçao</td>
-                  <td className="p-2 block md:table-cell"><button className='px-4 py-1 bg-[#16C098] text-xs font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button></td>
+                  <td className="p-2 block md:table-cell"><button className='px-5 py-1 bg-[#16C098] text-sm font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button></td>
                 </tr>
                 <tr className="border-b block md:table-row">
                   <td className="p-2 block md:table-cell">Jacob Jones</td>
@@ -447,7 +447,7 @@ const Dashboard = () => {
                   <td className="p-2 block md:table-cell">(208) 555-0112</td>
                   <td className="p-2 block md:table-cell">jacob@yahoo.com</td>
                   <td className="p-2 block md:table-cell">Brazil</td>
-                  <td className="p-2 block md:table-cell"><button className='px-4 py-1 bg-[#16C098] text-xs font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button></td>
+                  <td className="p-2 block md:table-cell"><button className='px-5 py-1 bg-[#16C098] text-sm font-bold text-green-700 ring-2 ring-green-700 hover:bg-green-400 rounded-sm'>Active</button></td>
                 </tr>
                 <tr className="border-b block md:table-row">
                   <td className="p-2 block md:table-cell">Kristin Watson</td>
@@ -455,7 +455,7 @@ const Dashboard = () => {
                   <td className="p-2 block md:table-cell">(704) 555-0127</td>
                   <td className="p-2 block md:table-cell">kristin@facebook.com</td>
                   <td className="p-2 block md:table-cell">Åland Islands</td>
-                  <td className="p-2 block md:table-cell"><button className='px-4 py-1 bg-red-400 text-xs font-bold text-red-700 ring-2 ring-red-700 hover:bg-red-200 rounded-sm'>Inactive</button></td>
+                  <td className="p-2 block md:table-cell"><button className='px-4 py-1 bg-red-400 text-sm font-bold text-red-700 ring-2 ring-red-700 hover:bg-red-200 rounded-sm'>Inactive</button></td>
                 </tr>
               </tbody>
             </table>
